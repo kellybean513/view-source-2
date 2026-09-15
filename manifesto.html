@@ -8,9 +8,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
 <style>
   body {
-    background-color: red;
+    background-color: white;
     font-family: Helvetica, Arial, sans-serif;
-    color: white;
+    color: black;
   }
 
   div {
@@ -33,36 +33,56 @@
       
   a:visited, a:link{
     text-decoration: none;
-    color: black;
+    color: red;
   }
-
 
   
   a:hover {
-    color: white;
+    color: red;
      }
+
+    .cascade-animation span {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(-20px);
+            font-family: sans-serif;
+            font-size: 32px;
+            animation: fadeInDown 0.5s forwards;
+        }
+
+.cascade-animation span:nth-child(1) { animation-delay: 0.1s; }
+        .cascade-animation span:nth-child(2) { animation-delay: 0.2s; }
+        .cascade-animation span:nth-child(3) { animation-delay: 0.3s; }
+        .cascade-animation span:nth-child(4) { animation-delay: 0.4s; }
+        .cascade-animation span:nth-child(5) { animation-delay: 0.5s; }
+
+        @keyframes fadeInDown {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 </style>
 </head>
 
 <body>
-  <div>DARE</div>
-  <div>DARE</div>
-  <div>DARE</div>
-  <div>DARE</div>
+  <div class="cascade-animation">
+    <span>DARE</span>
+    <span>DARE</span>
+    <span>DARE</span>
+    <span>DARE</span>
+    <span>DARE</span>
+    <span>DARE</span>
+    <span>DARE</span>
+  </div>
+
   <h1>
       <span style="transform: rotate(-12deg);">D</span><span>A</span><span style="transform: rotate(-12deg);">R</span><span>E</span>
       <span style="transform: rotate(-12deg);">T</span><span>O</span>
       <span style="transform: rotate(-12deg);">S</span><span>T</span><span style="transform: rotate(-12deg);">R</span><span>U</span><span style="transform: rotate(-12deg);">G</span><span>G</span><span style="transform: rotate(-12deg);">L</span><span>E</span>
   </h1>
-    <div>DARE</div>
-  <div>DARE</div>
-  <div>DARE</div>
-  <div>DARE</div>
   <h1><a href="https://designmanifestos.org/eric-cai-shi-wei-idea-innocent-originality-reasonable/#:~:text=Dare%20to%20Struggle%20and%20Dare%20to%20Win"><span style="transform: rotate(-12deg);">D</span><span>A</span><span style="transform: rotate(-12deg);">R</span><span>E</span> 
     <span style="transform: rotate(-12deg);">T</span><span>O</span> 
     <span style="transform: rotate(-12deg);">W</span><span>I</span><span style="transform: rotate(-12deg);">N</span></a></h1>
-  <div>DARE</div>
-  <div>DARE</div>
-  <div>DARE</div>
-  <div>DARE</div>
+
 </body>
